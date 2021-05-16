@@ -4,7 +4,6 @@
     margin-right: auto;
     padding-left: 10px;
     padding-right: 10px;
-
 }
 
 .menu__list {
@@ -14,6 +13,44 @@
     height: 70px;
     padding-left: 30px;
     padding-right: 30px;
+}
+
+.menu__btn {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    position: relative;
+    display: none;
+    background-color: #fff;
+
+}
+
+.menu__btn::after,
+.menu__btn::before {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 2px;
+    background-color: black;
+    left: 0;
+}
+
+.menu__btn::before {
+    top: 0;
+}
+
+.menu__btn::after {
+    bottom: 0;
+}
+
+.menu__btn span {
+    display: block;
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    top: 14px;
+    left: 0;
+    background-color: black;
 }
 
 .menu__list-item {
@@ -99,7 +136,7 @@
 .intro__image-2 {
     width: 247px;
     height: 277px;
-    transform: rotate(-180deg);
+
 }
 
 .africa {
@@ -238,6 +275,20 @@
     margin-bottom: 130px;
 }
 
+.videowrapper {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+}
+
+.videoWrapper iframe {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
 .whatsinside__list-inner {
     display: flex;
     justify-content: center;
@@ -309,6 +360,7 @@
     font-size: 28px;
     line-height: 35px;
     margin-bottom: 20px;
+    text-align: center;
 }
 
 .price {
@@ -332,10 +384,11 @@
     border-radius: 100px;
     background-color: #FF0000;
     padding: 15px 35px 15px 35px;
+    text-decoration-line: none;
 }
 
 .buy__button:hover {
-    background-color: blue;
+    background-color: #FF7A0F;
 }
 
 .arrow_to_up {
@@ -389,6 +442,7 @@
     display: block;
     text-decoration-line: underline;
     margin-bottom: 5px;
+    color: #000000;
 }
 
 .footer_link:visited {
@@ -408,7 +462,9 @@
     opacity: 0;
     visibility: hidden;
     transition: all 0.8s ease 0s;
+    
 }
+
 
 .popup.open {
     opacity: 1;
@@ -421,17 +477,7 @@
     opacity: 1;
 }
 
-/*
-.popup:target {
-    opacity: 1;
-    visibility: visible;
-}
-.popup:target .popup__content {
-    transform:
-        perspective(600px) translate(0px, 0px) rotateX(0deg);
-    opacity: 1;
-}
-*/
+
 
 .popup__body {
     min-height: 100%;
@@ -439,7 +485,7 @@
     display: flex;
 
     justify-content: center;
-    padding: 50px 10px;
+    padding: 30px 10px;
 }
 
 .popup__content {
@@ -453,12 +499,12 @@
     ;
     opacity: 0;
     transition: all 0.8s ease 0s;
-    background: linear-gradient(180deg, #D3922F 0%, rgba(211, 165, 47, 0.93) 100%);
+    background: #F7CE6C;
 }
 
 .popup__close {
     position: absolute;
-    right: 10px;
+    left: 10px;
     top: 10px;
     font-size: 20px;
     color: black;
@@ -481,6 +527,25 @@
     color: #1C3EB7;
     margin-bottom: 8px;
     max-width: 576px;
+}
+.form__body{
+    position: relative;
+}
+.form__body::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(50, 50, 50, 0.9) url(../images/loading.gif) center / 200px no-repeat;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .4s ease 0s;
+}
+.form__body._sending::after{
+    opacity: 1;
+    visibility: visible;
 }
 
 .form__inner {
@@ -559,16 +624,22 @@
     width: 380px;
     margin-bottom: 25px;
 }
-
+.placeholder._error, 
+.checkbox._error{
+    box-shadow: 0 0 15px red;
+}
 .checkbox {
     width: 30px;
     height: 30px;
     margin-right: 20px;
 }
-.form-item_for_button{
+
+.form-item_for_button {
     display: flex;
     justify-content: center;
+    padding-bottom: 10px;
 }
+
 .registerbtn {
     font-family: Amatic SC;
     font-style: normal;
@@ -582,4 +653,3 @@
     padding: 10px 30px 10px 30px;
     border-radius: 30px;
 }
-

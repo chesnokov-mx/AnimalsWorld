@@ -1,0 +1,216 @@
+@media (max-width: 992px) {
+    .menu__list {
+        display: block;
+        position: absolute;
+        padding-left: 0;
+        padding-right: 0;
+        left: 0;
+        right: 0;
+        text-align: center;
+        transform: translateY(-4000%);
+        transition: all .5s;
+        z-index: 1;
+    }
+
+    .menu__list.menu__list--active {
+        transform: translateY(0%);
+        transition: all .5s;
+        z-index: 1;
+    }
+
+    .menu__btn {
+        display: block;
+        position: absolute;
+        right: 10px;
+        top: 25px;
+        z-index: 2;
+    }
+
+    .menu__list-link {
+        display: block;
+        padding: 10px 0;
+        background-color: #fff;
+    }
+
+    .menu__list-item {
+        background-color: #fff;
+    }
+
+    .menu__list-item:last-child {
+        padding-bottom: 10px;
+    }
+
+    .top__image .container {
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .top__image img {
+        width: 100%;
+    }
+
+    .intro__image {
+        width: 30%;
+    }
+
+    .intro__image-2 {
+        width: 30%;
+    }
+
+    .intro__text {
+        font-size: 22px;
+        line-height: 30px;
+        margin-bottom: 10px;
+    }
+
+    .gamepurpose-img {
+        width: 30%;
+    }
+
+    .margin_for_texttitle {
+        padding-left: 0px;
+        text-align: center;
+    }
+
+}
+
+@media (max-width: 827px) {
+    .slick-arrow {
+        position: absolute;
+        top: 400px;
+        border: none;
+        background-color: #fff;
+    }
+
+    #prev.slick-arrow {
+        left: 200px;
+    }
+
+    #next.slick-arrow {
+        left: 300px;
+        transform: rotate(-180deg);
+    }
+}
+
+@media (max-width: 530px) {
+    .intro__inner {
+        flex-wrap: wrap;
+    }
+
+    .intro__inner-2 {
+        flex-wrap: wrap;
+    }
+
+    .intro__image {
+        order: -1;
+        width: 70%;
+        margin: 0 auto;
+        margin-bottom: 10px;
+    }
+
+    .intro__image-2 {
+        width: 70%;
+        margin: 0 auto;
+        margin-bottom: 10px;
+    }
+
+    .intro {
+        padding-top: 0;
+        margin-bottom: 10px;
+    }
+
+    .inner__gamepurpose {
+        flex-wrap: wrap;
+        padding-top: 0;
+        justify-content: center;
+    }
+
+    .gamepurpose-img {
+        order: -1;
+    }
+
+    .gamepurpose-img {
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    .name__title {
+        font-size: 40px;
+    }
+
+    .slider__item-img {
+        height: 300px;
+    }
+
+    .slick-arrow {
+        top: 310px;
+    }
+
+    .popup__content {
+        max-width: 330px;
+        max-height: 650px;
+    }
+    .form-item{
+        font-size: 25px;
+        line-height: 25px;
+    }
+    .acception-text{
+        font-size: 14px;
+        line-height: 16px;
+    }
+    .acception_for_politics{
+        padding-left: 25px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+@media (max-width: 400px) {
+    .slider__item-img {
+        height: 250px;
+    }
+
+    .slick-arrow {
+        top: 260px;
+    }
+
+    #prev.slick-arrow {
+        left: 100px;
+    }
+
+    #next.slick-arrow {
+        left: 200px;
+        transform: rotate(-180deg);
+    }
+
+    .whatsinside__list-inner {
+        flex-direction: column;
+    }
+
+    .whatsinside__list-item {
+        margin-bottom: 10px;
+    }
+
+    .whatsinside__title {
+        margin-bottom: 15px;
+    }
+}

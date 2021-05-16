@@ -35,7 +35,7 @@ function popupOpen(curentPopup) {
         if (popupActive) {
             popupClose(popupActive, false);
         } else {
-            bodyLock();
+            //bodyLock();
         }
         curentPopup.classList.add('open');
         curentPopup.addEventListener("click", function (e) {
@@ -50,7 +50,7 @@ function popupClose(popupActive, doUnlock = true) {
     if (unlock) {
         popupActive.classList.remove('open');
         if (doUnlock) {
-            bodyUnlock();
+            //bodyUnlock();
         }
     }
 }

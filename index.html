@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
 </head>
 
 <body>
@@ -21,6 +22,9 @@
             <div class="container">
                 <div class="header__inner">
                     <nav class="menu">
+                        <div class="menu__btn">
+                            <span></span>
+                        </div>
                         <ul class="menu__list">
                             <li class="menu__list-item">
                                 <a href="#intro" class="menu__list-link">
@@ -50,10 +54,11 @@
         </header>
         <section class="top__image">
             <div class="container">
-                <img src="images/g2024%201.png" alt="top__image" class="top__image">
+                <img src="images/g2024%201.png" alt="top__image" class="top__imageimg">
 
             </div>
         </section>
+
 
         <a href="" name="intro"></a>
 
@@ -110,11 +115,11 @@
                             Возрастная универсальность<br>6+
                         </h3>
                     </div>
-                    <img src="images/Animals/mouse.svg" alt="" class="gamepurpose-img-mouse margin-img">
+                    <img src="images/Animals/mouse.svg" alt="" class="gamepurpose-img margin-img">
 
                 </div>
                 <div class="inner__gamepurpose">
-                    <img src="images/Animals/cow.svg" alt="" class="gamepurpose-img-cow">
+                    <img src="images/Animals/cow.svg" alt="" class="gamepurpose-img">
                     <div class="gamepurpose-content">
                         <h3 class="name__title">
                             Многофункциональность
@@ -144,14 +149,15 @@
                 </div>
             </div>
         </section>
-
         <section class="videoreview">
             <div class="container">
-                <a href="" name="videoreview"></a>
-                <h3 class="videoreview-title">
-                    ВИДЕО
-                </h3>
-                <iframe width="1000" height="600" src="https://www.youtube.com/embed/Rb-zJMjZnrA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div class="videowrapper">
+                    <a href="" name="videoreview"></a>
+                    <h3 class="videoreview-title">
+                        ВИДЕО
+                    </h3>
+                    <iframe width="100%" height="auto" src="https://www.youtube.com/embed/Rb-zJMjZnrA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
             </div>
         </section>
 
@@ -214,35 +220,36 @@
                     <h2 class="popup__main-title">
                         Купить игру = 790 р
                     </h2>
-                    <form action="something">
+                    <form id="form" action="something" class="form__body">
                         <div class="form__inner">
                             <div class="form-item">
                                 <label class="form_name" for="client_name"><b>Имя</b></label>
                                 <div class="centerer">
-                                    <input class="placeholder" type="text" placeholder="Ваше имя" name="client_name" required>
+                                    <input class="placeholder _req" type="text" placeholder="Ваше имя" name="client_name" >
                                 </div>
                             </div>
                             <div class="form-item">
                                 <label class="form_name" for="email"><b>Email</b></label>
                                 <div class="centerer">
-                                    <input class="placeholder" type="text" placeholder="Ваш Email" name="email" required>
+                                    <input class="placeholder _req _email" type="text" placeholder="Ваш Email" name="email" >
                                 </div>
                             </div>
                             <div class="form-item">
                                 <label class="form_name" for="telephon"><b>Телефон</b></label>
                                 <div class="centerer">
-                                    <input class="placeholder" type="tel" placeholder="Ваш телефон" name="telephon" required>
+                                    <input class="placeholder _req" type="tel" placeholder="Ваш телефон" name="telephon" >
                                 </div>
                             </div>
 
                             <div class="acception_for_politics">
-                                <input class="checkbox" type="checkbox" required>
+                                <input class="checkbox _req" type="checkbox" >
                                 <p class="acception-text">Я даю согласие на обработку моих персональных данных в соответствии с условиями, а также принимаю условия договора публичной оферты.</p>
                             </div>
                         </div>
                         <div class="form-item_for_button">
-                            <button type="submit" class="registerbtn">Оплатить</button>
+                            <button type="submit" class="registerbtn">Отправить</button>
                         </div>
+
                     </form>
                 </div>
             </div>
@@ -277,6 +284,7 @@
 
     </div>
 
+    <script src="js/send.js"></script>
     <script src="js/popups.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="js/slick.min.js"></script>
