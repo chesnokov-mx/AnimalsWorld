@@ -281,7 +281,7 @@
     height: 0;
 }
 
-.videoWrapper iframe {
+.videowrapper iframe {
     position: absolute;
     top: 60px;
     left: 0;
